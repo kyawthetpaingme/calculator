@@ -41,7 +41,10 @@
                     <input type="button" value="0" name="v0" onclick="val(v0.value)">
                     <input type="button" value="." name="vdot" onclick="val(vdot.value)">
                     <input type="button" value="/" name="vdiv" onclick="val(vdiv.value)">
-                    <input type="button_eql" value="=" name="veql" onclick="calculate()">
+                </div>
+
+                <div class="equal">
+                    <ul><li value="=" name="veql" onclick="calculate()">=</li></ul>
                 </div>
 
             </div>
@@ -56,7 +59,7 @@
 
         function calculate(){
             if(form.disp.value == ""){
-                alert("Type Only Numbers");
+                alert("Please Enter First Number");
             }else{
                 form.disp.value = eval(form.disp.value);
             }
